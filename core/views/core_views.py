@@ -26,6 +26,11 @@ def screen(request):
 def contact(request):
     return render(request, 'core/contact.html')
 
-#
-# def contact(request):
-#     return render(request, 'core/index.html')
+
+def ahenfo(request):
+   return render(request, 'core/ahenfo.html')
+
+
+
+def book(request):
+   return render(request, 'core/booking.html')

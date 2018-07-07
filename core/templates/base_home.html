@@ -41,20 +41,20 @@
                 <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="screening.html" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false">
                     Screening
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="screening.html">General</a>
-                    <a class="dropdown-item" href="screening.html">Pre-wedding</a>
+                    <a class="dropdown-item" href="{% url 'screen' %}">General</a>
+                    <a class="dropdown-item" href="{% url 'screen' %}">Pre-wedding</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ahenfo.html">Ahenfo Health</a>
+                <a class="nav-link" href="{% url 'ahenfo' %}">Ahenfo Health</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="booking.html">Book On</a>
+                <a class="nav-link" href="{% url 'book' %}">Book On</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true"
@@ -62,8 +62,8 @@
                     Account
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="sign_in.html">Sign in</a>
-                    <a class="dropdown-item" href="sign_up.html">Sign up</a>
+                    <a class="dropdown-item" href="{% url 'signin' %}">Sign in</a>
+                    <a class="dropdown-item" href="{% url 'signup' %}">Sign up</a>
                 </div>
             </li>
 
