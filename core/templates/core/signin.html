@@ -28,19 +28,19 @@
             <!--Body-->
             <div class="md-form">
 			    <i class="fa fa-user prefix"></i>
-                <input type="text" id="loginuser" class="form-control" name="username" required>
-                <label for="loginuser">Your Username</label>
+                {{ login_form.phone }}
+                <label for="id_phone">Your Phone Number</label>
             </div>
 
             <div class="md-form pb-3">
 			     <i class="fa fa-lock prefix"></i>
-                <input type="password" id="loginpass" class="form-control" name="password" required>
-                <label for="loginpass">Your Password</label>
+               {{ login_form.password }}
+                <label for="id_password">Your Password</label>
                  <p class="justify-content-end d-flex"><a href="#" class="blue-text font-small ml-1">Forgot Password?</a></p>
             </div>
 
             <div class="text-center dark-grey-text mb-3">
-                <button type="submit" name="signinbutton" class="btn mybtn-color btn-block btn-rounded  z-depth-1a">Sign in</button>
+                <button type="submit" name="signinbutton" class="btn btn-yellow btn-block btn-rounded  z-depth-1a">Sign in</button>
             </div>
 
 
