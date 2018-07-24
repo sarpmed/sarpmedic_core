@@ -17,8 +17,17 @@ li{
 
 }
 
-.navbar-fixed-top, .navbar-fixed-bottom {
+.navbar-fixed-top{
     position: fixed;
+	top:0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-fixed-bottom {
+	position: fixed;
+	bottom:0;
     right: 0;
     left: 0;
     z-index: 1030;
@@ -56,17 +65,20 @@ li{
 }
 
 .navbar .dropdown-menu a {
+	width:100%;
+	margin:0;
     font-weight: 400;
     font-size: 12px;
     font-family: 'Roboto', Arial, Tahoma, sans-serif;
     text-transform: uppercase;
     color: #333!important;
-    padding:20px 15px 25px 30px;
+    padding:20px!important; 
 }
 .navbar .dropdown-menu a:hover {
-    background: #f6f50d;
+    background: #f6f50d!important;
+	width:100%;
 }
-.dropdown-menu{
+.dropdown .dropdown-menu{
     margin: 0;
     padding: 0;
 }
@@ -144,8 +156,6 @@ li{
 }
 .card-body{
     padding: 50px;
-    background: #585805;
-
 }
 .ee{
     background: #181905cf !important;
@@ -189,11 +199,13 @@ li{
 /* scroll to top */
 .scrollup{
     position:fixed;
-    width:40px;
-    height:40px;
-    bottom:0;
+    width:45px;
+    height:45px;
+    bottom:10px;
     right:20px;
     background: #f6f50d;
+	border-radius:50%;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
 }
 
@@ -318,7 +330,7 @@ a.scrollup i:hover {
     line-height: 30px;
 }
 .blue-text{
-    color: #f6f50d!important;
+    color:#b7b628!important;
 }
 .pr-2{
     line-height: 30px;
@@ -368,4 +380,31 @@ a.scrollup i:hover {
 .core_values{
     padding:0;
     line-height: 35px;
+}
+.mycard-color{
+	background: linear-gradient(to right, #ffeeee, #ddefbb); 
+}
+.mybtn-color{
+	background: linear-gradient(to right, #6C6B74,#2E303E,#9199BE,#54678F,#212624);
+	
+}
+.btn-rounded{
+	border-radius:10em;
+}
+.my-chip-style{
+		background: linear-gradient(to right,  #d53369, #cbad6d);
+}
+#others .chip{
+	background-color: #4285f4;
+	color:#fff;
+}
+#currentmed .chip{
+	background-color: #4285f4;
+	color:#fff;
+}
+.chips .input{
+	width:200px!important;	
+}
+.signup-head{
+	font-weight:700;
 }

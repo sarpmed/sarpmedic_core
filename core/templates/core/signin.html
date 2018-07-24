@@ -9,7 +9,7 @@
     <!-- Start your project here-->
 
 <div class="container">
-	<div class="row" style="margin-top:50px;">
+	<div class="row" style="margin-top:150px;margin-bottom:50px">
        <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-xs-12">
 
 	     <form action="#" method="post" role="form">
@@ -18,7 +18,7 @@
     <!--Form without header-->
     <div class="card">
 
-        <div class="card-body">
+        <div class="card-body  mycard-color">
 
             <!--Header-->
             <div class="text-center">
@@ -36,11 +36,11 @@
 			     <i class="fa fa-lock prefix"></i>
                {{ login_form.password }}
                 <label for="id_password">Your Password</label>
-                 <p class="justify-content-end d-flex"><a href="#" class="blue-text font-small ml-1">Forgot Password?</a></p>
             </div>
+			<p class="justify-content-end d-flex"><a href="#" class="dark-grey-text font-small ml-1">Forgot Password?</a></p>
 
             <div class="text-center dark-grey-text mb-3">
-                <button type="submit" name="signinbutton" class="btn btn-yellow btn-block btn-rounded  z-depth-1a">Sign in</button>
+                <button type="submit" name="signinbutton" class="btn mybtn-color btn-block btn-rounded  z-depth-1a">Sign in</button>
             </div>
 
 
@@ -58,6 +58,6 @@
            </div>
 	   </div>
  	 </div><!--row ends-->
-</div>
+
 
 {% endblock %}
